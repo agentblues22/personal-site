@@ -1,6 +1,7 @@
 import './StyleSheets/Footer.css';
 import git from './images/github-11-64.png';
 import linkedin from './images/linkedin-3-64.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 	return (
@@ -8,19 +9,19 @@ function Footer() {
 			<div className="Linkontainer">
 				<ul className="Footcontainer">
 					<li className="Footitems">
-						<a className="Link" href="https://georgyroy.netlify.app/">
+						<Link className="Link" to="/">
 							Home
-						</a>
+						</Link>
 					</li>
 					<li className="Footitems">
-						<a className="Link" href="https://georgyroy.netlify.app/about">
+						<Link className="Link" to="/about">
 							About
-						</a>
+						</Link>
 					</li>
 					<li className="Footitems">
-						<a className="Link" href="https://georgyroy.netlify.app/projects">
+						<Link className="Link" to="/projects">
 							Projects
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
