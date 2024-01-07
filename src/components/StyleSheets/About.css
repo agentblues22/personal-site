@@ -1,0 +1,144 @@
+.Aboutmaincontainer {
+	height: 1000px;
+	background-color: black;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 100px;
+	font-family: monospace;
+	font-size: 15px;
+}
+.detail_container {
+	height: auto;
+	width: auto;
+	background-color: transparent;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.photo {
+	height: 200px;
+	width: auto;
+	background-color: rgba(76, 76, 76, 0.8);
+	border-radius: 30px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0px;
+}
+.photocontainer {
+	width: 150px;
+	height: 150px;
+	background-image: url('../images/profile.jpg');
+	border-radius: 15px;
+	background-position-x: 70%;
+	background-position-y: 10%;
+	background-size: 350px 350px;
+}
+.aboutcontainer {
+	height: 150px;
+	width: 1000px;
+	background-color: transparent;
+	color: white;
+}
+.maininfo {
+	height: 700px;
+	width: auto;
+	background-color: transparent;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 30px;
+	padding: 15px;
+	color: white;
+	overflow: scroll;
+}
+.aboutheading {
+	font-size: 20px;
+	color: white;
+}
+.aboutsubheading {
+	font-size: 17px;
+	color: white;
+}
+.contacts {
+	padding: 0px;
+}
+@media only screen and (max-width: 1000px) {
+	.Aboutmaincontainer {
+		height: 600px;
+		background-color: black;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 60px;
+	}
+	.detail_container {
+		height: auto;
+		width: auto;
+		background-color: transparent;
+		border-radius: 25px;
+		display: flex;
+		flex-direction: column;
+		font-size: 7px;
+	}
+	.photo {
+		height: auto;
+		width: auto;
+		background-color: rgba(76, 76, 76, 0.8);
+		border-radius: 25px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 7px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-bottom: 0px;
+	}
+	.photocontainer {
+		width: 80px;
+		height: 80px;
+		background-image: url('../images/profile.jpg');
+		border-radius: 15px;
+		background-position-x: 70%;
+		background-position-y: 10%;
+		background-size: 350px 350px;
+		display: none;
+	}
+	.aboutcontainer {
+		height: 120px;
+		width: auto;
+		background-color: transparent;
+		color: white;
+	}
+	.maininfo {
+		height: 400px;
+		width: auto;
+		background-color: transparent;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		border-radius: 20px;
+		padding: 15px;
+		color: white;
+		overflow: scroll;
+	}
+	.aboutheading {
+		font-size: 14px;
+		color: white;
+	}
+	.aboutsubheading {
+		font-size: 12px;
+		color: white;
+	}
+}
