@@ -8,17 +8,17 @@ function Footer() {
 			<div className="Linkontainer">
 				<ul className="Footcontainer">
 					<li className="Footitems">
-						<a className="Link" href="/">
+						<a className="Link" href="https://georgyroy.netlify.app/">
 							Home
 						</a>
 					</li>
 					<li className="Footitems">
-						<a className="Link" href="/about">
+						<a className="Link" href="https://georgyroy.netlify.app/about">
 							About
 						</a>
 					</li>
 					<li className="Footitems">
-						<a className="Link" href="/projects">
+						<a className="Link" href="https://georgyroy.netlify.app/projects">
 							Projects
 						</a>
 					</li>
