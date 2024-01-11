@@ -21,22 +21,24 @@ function Projectpage() {
 	];
 
 	return (
-		<div className="projectpage">
-			{projects.map((project) => (
-				<div key={project.name} className="projectpagecontainer">
-					<div className="projectpictureframe">
-						<img src={project.photoLink} className="projectpictureframe" />
-					</div>
-					<div className="project_body_writeup">
-						<div className="project_body_text">{project.content}</div>
-						<div className="projectbuttoncontainer">
-							<a href={project.link}>
-								<div className="learn_btnp">to site!</div>
-							</a>
+		<div className="projectsback">
+			<div className="projectpage">
+				{projects.map((project) => (
+					<div key={project.name} className="projectpagecontainer">
+						<div className="projectpictureframe">
+							<img src={project.photoLink} className="projectpictureframe" />
+						</div>
+						<div className="project_body_writeup">
+							<div className="project_body_text">{project.content}</div>
+							<div className="projectbuttoncontainer">
+								<a href={project.link}>
+									<div className="learn_btnp">to site!</div>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			))}
+				))}
+			</div>
 		</div>
 	);
 }

@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	align-content: stretch;
 	background-color: rgba(0, 0, 0);
+	font-family: monospace;
 }
 .Linkontainer {
 	list-style-type: none;

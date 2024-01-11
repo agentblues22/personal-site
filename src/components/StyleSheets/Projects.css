@@ -1,11 +1,7 @@
 .projectcontainer {
 	height: 300px;
 	width: auto;
-	background-image: linear-gradient(
-		to bottom right,
-		rgb(20, 20, 20),
-		rgb(63, 63, 63)
-	);
+	background-color: rgba(0, 0, 0, 0.4);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -60,15 +56,17 @@
 	justify-content: flex-start;
 	flex-direction: row;
 }
+.projeectbback {
+	background-image: url(../images/projectbak.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
 @media only screen and (max-width: 800px) {
 	.projectcontainer {
 		height: 400px;
 		width: auto;
-		background-image: linear-gradient(
-			to bottom right,
-			rgb(20, 20, 20),
-			rgb(63, 63, 63)
-		);
+		background-color: rgba(0, 0, 0, 0.4);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -77,8 +75,8 @@
 	}
 	.pictureframe {
 		align-self: center;
-		height: 200px;
-		width: 250px;
+		height: 150px;
+		width: 200px;
 		background-color: white;
 		border-radius: 15%;
 		animation-name: example;
@@ -92,23 +90,23 @@
 	@keyframes example {
 		0% {
 			background-image: url(../images/project1.JPG);
-			background-size: 350px 200px;
+			background-size: cover;
 		}
 		25% {
 			background-image: url(../images/project2.JPG);
-			background-size: 350px 200px;
+			background-size: cover;
 		}
 		50% {
 			background-image: url(../images/project1.JPG);
-			background-size: 350px 200px;
+			background-size: cover;
 		}
 		75% {
 			background-image: url(../images/project2.JPG);
-			background-size: 350px 200px;
+			background-size: cover;
 		}
 		100% {
 			background-image: url(../images/project1.JPG);
-			background-size: 350px 200px;
+			background-size: cover;
 		}
 	}
 	.body_writeup {
