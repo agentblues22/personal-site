@@ -32,7 +32,7 @@ function NavBar() {
 					<li className="Navitems">Home</li>
 				</Link>
 				<Link className="Link" to="/about">
-					<li className="Navitems">About Me</li>
+					<li className="Navitems">About</li>
 				</Link>
 				<Link className="Link" to="/projects">
 					<li className="Navitems">Projects</li>

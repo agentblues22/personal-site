@@ -20,9 +20,6 @@
 	margin-right: 100px;
 	border-radius: 50px;
 	margin-bottom: 50px;
-	border-style: dotted;
-	border-width: 2px;
-	border-color: rgb(153, 153, 162);
 }
 .projectpictureframe {
 	align-self: center;
@@ -34,9 +31,6 @@
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	border-radius: 15%;
-	border-style: dotted;
-	border-width: 2px;
-	border-color: rgb(153, 153, 162);
 }
 
 .project_body_writeup {
@@ -67,7 +61,6 @@
 	background-color: white;
 	align-self: center;
 	border-radius: 10px;
-	border: dotted 3px white;
 	transition-duration: 0.2s;
 	margin-bottom: 15px;
 	text-decoration: none;
@@ -85,7 +78,7 @@ a {
 	border-radius: 10px;
 }
 .projectsback {
-	background-image: url(../images/background.gif);
+	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
 }

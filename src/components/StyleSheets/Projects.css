@@ -1,5 +1,5 @@
 .projectcontainer {
-	height: 300px;
+	height: 25vh;
 	width: auto;
 	background-color: rgba(0, 0, 0, 0.4);
 	display: flex;
@@ -8,8 +8,8 @@
 }
 .pictureframe {
 	align-self: center;
-	height: 200px;
-	width: 350px;
+	height: 130px;
+	width: 250px;
 	background-color: white;
 	border-radius: 15%;
 	animation-name: example;
@@ -64,7 +64,7 @@
 }
 @media only screen and (max-width: 800px) {
 	.projectcontainer {
-		height: 400px;
+		height: 50vh;
 		width: auto;
 		background-color: rgba(0, 0, 0, 0.4);
 		display: flex;

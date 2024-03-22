@@ -1,13 +1,13 @@
 .herobackground {
-	background-color: rgba(0, 0, 0, 0.7);
-	height: 100vh;
-	width: auto;
 	display: flex;
-	justify-content: center;
+	width: 110vb;
+	padding-top: 220px;
+	padding-left: 100px;
+	justify-content: left;
 	flex-direction: column;
 }
 .typewriter {
-	text-align: center;
+	text-align: left;
 }
 .LinkHero {
 	color: black;
@@ -15,15 +15,22 @@
 .LinkHero:hover {
 	color: white;
 }
+@font-face {
+	font-family: 'bruno';
+	src: local('bruno'),
+		url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
+}
 .typewriter h1 {
 	color: #fff;
-	font-family: monospace;
+	font-family: 'bruno';
+	font-size: 35px;
+	font-weight: 700;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid orange; /* The typwriter cursor */
+	border-right: 0.15em solid white; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: 0.15em; /* Adjust as needed */
-	animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+	letter-spacing: 0.05em; /* Adjust as needed */
+	animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
@@ -46,16 +53,28 @@
 		border-color: orange;
 	}
 }
+.corrector {
+	display: flex;
+	justify-content: flex-start;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	width: auto;
+}
 .body_content {
 	text-align: center;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	font-family: monospace;
-	font-size: 14px; /* Ensures the content is not revealed until the animation */ /* The typwriter cursor */
+	font-size: 12px; /* Ensures the content is not revealed until the animation */ /* The typwriter cursor */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.15em; /* Adjust as needed */
-	width: 500px;
+	width: 100%;
 	height: 120px;
-	padding-top: 40px;
+	padding-bottom: 0%;
+	padding-top: 0%;
+	text-align: left;
 }
 .learn_btn {
 	height: 30px;
@@ -65,12 +84,12 @@
 	color: black;
 	align-content: center;
 	background-color: white;
-	align-self: center;
+	align-self: left;
 	border-radius: 10px;
 	border: dotted 3px white;
 	transition-duration: 0.2s;
-	margin-bottom: 15px;
 	text-decoration: none;
+	align-self: left;
 }
 .a {
 	text-decoration: none;
@@ -81,27 +100,31 @@
 	color: white;
 	align-content: center;
 	background-color: transparent;
-	align-self: center;
+	align-self: left;
 	border-radius: 10px;
 }
 .background_img {
-	background-image: url(../images/background.gif);
+	background-image: url(../images/georgy.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-position-x: 10%;
+	background-position-y: 60%;
 	height: 100vh;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
 	.herobackground {
-		background-color: rgba(0, 0, 0, 0.6);
-		height: 350px;
+		height: 100vh;
 		width: auto;
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
+		margin-bottom: 70%;
+		padding-top: 0px;
+		padding-left: 0px;
 	}
 	.typewriter {
 		text-align: center;
-		margin-top: 70px;
+		margin-top: 20px;
 		padding-top: 0;
 	}
 	.typewriter h1 {
@@ -136,6 +159,14 @@
 			border-color: orange;
 		}
 	}
+	.corrector {
+		background-color: rgba(0, 0, 0, 0.6);
+		height: 100vh;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	.body_content {
 		text-align: center;
 		color: #fff;
@@ -144,13 +175,41 @@
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: 0.15em; /* Adjust as needed */
 		width: 300px;
-		height: 100px;
-		padding-top: 20px;
+		height: 200px;
+		padding-bottom: 0%;
 	}
 	.background_img {
-		background-image: url(../images/background.gif);
+		background-image: url(../images/georgy.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 		height: 100%;
+	}
+	.learn_btn {
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		font-family: monospace;
+		color: black;
+		align-content: center;
+		background-color: white;
+		align-self: left;
+		border-radius: 10px;
+		border: dotted 3px white;
+		transition-duration: 0.2s;
+		text-decoration: none;
+		align-self: center;
+	}
+	.a {
+		text-decoration: none;
+	}
+	.learn_btn:hover {
+		height: 30px;
+		width: 100px;
+		color: white;
+		align-content: center;
+		background-color: transparent;
+		align-self: center;
+		border-radius: 10px;
 	}
 }

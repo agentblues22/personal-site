@@ -5,7 +5,6 @@ function App() {
 	return (
 		<>
 			<Hero></Hero>
-			<Projects />
 		</>
 	);
 }

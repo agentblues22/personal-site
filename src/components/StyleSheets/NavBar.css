@@ -7,14 +7,18 @@
 	right: 25%;
 
 	font-family: monospace;
+	font-size: 14px;
 }
 .Navcontainer {
 	list-style-type: none;
-	background-color: rgba(85, 84, 84, 0.5);
+	background-color: transparent;
 	display: block;
 	position: top;
-	padding: 15px 100px;
+	padding: 5px 100px;
 	border-radius: 0px 0px 50px 50px;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: white;
 }
 .Link {
 	color: white;
@@ -26,7 +30,7 @@
 .Navitems {
 	float: left;
 	display: block;
-	color: white;
+	color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -35,8 +39,7 @@
 }
 
 .Navitems:hover {
-	background-color: white;
-	color: black;
+	color: rgba(255, 255, 255, 1);
 	border-radius: 15px 15px 15px 15px;
 	transition-duration: 0.4s;
 }
@@ -56,6 +59,9 @@
 		padding: 10px 50px;
 		border-radius: 0px 0px 50px 50px;
 		display: none;
+		border-bottom-style: none;
+		border-width: 1px;
+		border-color: none;
 	}
 
 	.Navitems {
@@ -64,7 +70,7 @@
 		width: 100%;
 		justify-content: center;
 		flex-direction: column;
-		color: white;
+		color: rgba(255, 255, 255, 0.7);
 		text-align: center;
 		text-decoration: none;
 		align-content: stretch;
@@ -74,8 +80,7 @@
 	}
 
 	.Navitems:hover {
-		background-color: white;
-		color: black;
+		color: rgba(255, 255, 255, 1);
 		align-content: stretch;
 		transition-duration: 0.4s;
 	}
