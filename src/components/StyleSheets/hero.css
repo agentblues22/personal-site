@@ -130,7 +130,7 @@
 	.typewriter h1 {
 		color: #fff;
 		font-size: 14px;
-		font-family: monospace;
+		font-family: 'bruno';
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
 		border-right: 0.15em solid orange; /* The typwriter cursor */
 		white-space: nowrap; /* Keeps the content on a single line */

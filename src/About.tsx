@@ -78,7 +78,7 @@ function About() {
 						</p>
 						<p>
 							Graduated from University of Essex in the year 2023 with a masters
-							in data science. Gained valuable nowledge in Data Modelling, Data
+							in data science. Gained valuable knowledge in Data Modelling, Data
 							Visualisation, Machine Learning etc.
 						</p>
 					</div>
