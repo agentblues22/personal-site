@@ -1,12 +1,12 @@
 .projectpage {
-	height: 100vh;
+	height: auto;
 	width: auto;
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	padding-top: 150px;
-	padding-bottom: 70px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 @font-face {
 	font-family: 'bruno';
@@ -21,15 +21,15 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-left: 100px;
-	margin-right: 100px;
-	border-radius: 50px;
-	margin-bottom: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 0px;
+	margin-bottom: 0px;
 }
 .projectpictureframe {
 	align-self: center;
-	height: 150px;
-	width: 250px;
+	height: 100px;
+	width: 120px;
 	background-color: white;
 
 	animation-name: example;
@@ -42,17 +42,12 @@
 	align-self: center;
 	display: flex;
 	flex-direction: column;
-	margin-left: 30px;
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
-	border-radius: 10px;
-	border-top: 1px;
+	margin-left: 10px;
 }
 .project_body_text {
-	width: 500px;
+	width: 250px;
 	height: auto;
-	font-size: 12px;
+	font-size: 8px;
 	color: white;
 	font-family: monospace;
 }
@@ -62,11 +57,12 @@
 	flex-direction: row;
 }
 .learn_btnp {
-	height: 20px;
-	width: 80px;
+	height: 15px;
+	width: 60px;
 	text-align: center;
 	font-family: monospace;
 	color: black;
+	font-size: 8px;
 	align-content: center;
 	background-color: white;
 	align-self: center;
@@ -79,7 +75,7 @@ a {
 	text-decoration: none;
 }
 .learn_btnp:hover {
-	height: 20px;
+	height: 15px;
 	width: 100px;
 	color: white;
 	align-content: center;
@@ -96,6 +92,7 @@ a {
 	background-color: white;
 	color: black;
 	width: 100%;
+	font-size: 10px;
 	font-family: 'bruno';
 	border-radius: 5px;
 	padding-left: 2px;
@@ -112,75 +109,66 @@ a {
 		height: auto;
 		width: auto;
 		background-color: rgba(0, 0, 0, 0.7);
-
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		padding-top: 100px;
-		padding-bottom: 0px;
+		justify-content: start;
+		padding: 0px;
+		margin: 0px;
+	}
+	@font-face {
+		font-family: 'bruno';
+		src: local('bruno'),
+			url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
 	}
 	.projectpagecontainer {
 		height: auto;
 		width: auto;
-		background-color: black;
-		background-image: none;
+		background-color: rgba(0, 0, 0, 0.2);
+
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
-		padding: 0;
-		margin: 0;
-		border-radius: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 0px;
+		margin-bottom: 0px;
 	}
 	.projectpictureframe {
 		align-self: center;
-		height: 150px;
-		width: 200px;
-		margin-bottom: 10px;
-		background-color: white;
+		height: 80px;
+		width: 100px;
 		border-radius: 15%;
-		animation-name: example;
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
-		padding: 0;
-		margin: 0;
-		margin-bottom: 10px;
-		margin-top: 15px;
 	}
 
 	.project_body_writeup {
 		align-self: center;
 		display: flex;
 		flex-direction: column;
-		margin: 0px;
-		text-align: center;
-		border-style: none;
+		margin-left: 10px;
 	}
 	.project_body_text {
-		width: 250px;
+		width: 175px;
 		height: auto;
-		align-items: center;
-		font-size: 12px;
+		font-size: 8px;
 		color: white;
-		text-align: center;
 		font-family: monospace;
 	}
 	.projectbuttoncontainer {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-direction: row;
-		margin-bottom: 15px;
 	}
 	.learn_btnp {
-		height: 30px;
-		width: 100px;
+		height: 15px;
+		width: 60px;
 		text-align: center;
 		font-family: monospace;
 		color: black;
+		font-size: 8px;
 		align-content: center;
 		background-color: white;
 		align-self: center;
 		border-radius: 10px;
-		border: dotted 3px white;
 		transition-duration: 0.2s;
 		margin-bottom: 15px;
 		text-decoration: none;
@@ -189,30 +177,33 @@ a {
 		text-decoration: none;
 	}
 	.learn_btnp:hover {
-		height: 30px;
-		width: 100px;
+		height: 15px;
+		width: 50px;
 		color: white;
 		align-content: center;
 		background-color: transparent;
 		align-self: center;
 		border-radius: 10px;
 	}
+	.projectsback {
+		background-color: black;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	.project_heading {
 		background-color: white;
-		margin-top: 10px;
 		color: black;
 		width: 100%;
+		font-size: 10px;
 		font-family: 'bruno';
 		border-radius: 5px;
 		padding-left: 2px;
-		font-size: 12px;
-		text-align: center;
 	}
 	.Skillset {
 		color: white;
 
 		font-family: monospace;
-		font-size: 9px;
+		font-size: 10px;
 		margin-bottom: 3px;
 	}
 }

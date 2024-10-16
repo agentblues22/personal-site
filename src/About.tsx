@@ -9,6 +9,8 @@ import r from './components/images/r.svg';
 import n from './components/images/node.png';
 import project1 from './components/images/project1img.jpg';
 import project2 from './components/images/project2img.jpg';
+import Projects from './components/Projects';
+import Projectpage from './Projectpage';
 
 function About() {
 	return (
@@ -25,6 +27,10 @@ function About() {
 						<img className="skill" src={numpy}></img>
 						<img className="skill" src={r}></img>
 						<img className="skill" src={n}></img>
+					</div>
+					<h1 className="aboutheading">projects:</h1>
+					<div className="projectdiv">
+						<Projectpage></Projectpage>
 					</div>
 				</div>
 				<div className="Educontainer">
