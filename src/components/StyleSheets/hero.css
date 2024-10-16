@@ -71,6 +71,7 @@
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.15em; /* Adjust as needed */
 	width: 100%;
+	text-align: justify;
 	height: 120px;
 	padding-bottom: 0%;
 	padding-top: 0%;

@@ -12,15 +12,10 @@ function Hero() {
 						<h1>GEORGY ELIAS ROY.</h1>
 					</div>
 					<div className="body_content">
-						A passionate programmer, Data Science graduate and avid computer
-						science enthusiast looking for work. click on the button below to
-						learn more about me!
-						<div className="learn_btn">
-							{' '}
-							<Link to="/about" className="LinkHero">
-								More!
-							</Link>
-						</div>
+						Hello. My name is Georgy Elias Roy. A motivated and passionate
+						computer science graduate actively looking out for opportunities. I
+						Have a distinction in Computer Science and Engineering from India
+						and a masters in Data Science from the University of Essex.
 					</div>
 				</div>
 			</div>
