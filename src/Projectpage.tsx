@@ -8,7 +8,7 @@ function Projectpage() {
 			name: 'Vaccine availabilty Webapp',
 			photoLink: photo1,
 			content:
-				'A website designed to check COVID-19 Vaccines across kerala. The website is now unfortunately defunct due to the discontinuation of the free API provided by the Indian Government',
+				'A website designed to check COVID-19 Vaccines across Kerala. The website is now unfortunately defunct due to the discontinuation of the free API provided by the Indian Government',
 			link: 'https://vaccineavailability.netlify.app/',
 			Skills: 'React,Node,HTML,CSS',
 		},
@@ -16,7 +16,7 @@ function Projectpage() {
 			name: 'Hotel Booking Site',
 			photoLink: photo2,
 			content:
-				'A website designed for a residency in Thrissur District of Kerala. The website provided only has the frontend side of the website. it contains several elements that are purely made out of base CSS> the website is done on NEXT.js Platform.',
+				'A website designed for a residency in Thrissur District of Kerala. The website provided only has the frontend side of the website. it contains several elements that are purely made out of base CSS. The website is done on NEXT.js Platform.',
 			link: 'https://kuku-residency-test.netlify.app/',
 			Skills: 'NEXT.js,Node,HTML,CSS',
 		},

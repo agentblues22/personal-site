@@ -24,7 +24,7 @@ function About() {
 		<>
 			<div className="Aboutmaincontainer">
 				<div className="Skillcontainer">
-					<h1 className="aboutheading">skills:</h1>
+					<h1 className="aboutheading">Skills</h1>
 					<div className="Skillitem">
 						<img className="skill" src={JS}></img>
 						<img className="skill" src={HTML}></img>
@@ -42,13 +42,13 @@ function About() {
 						<img className="skill" src={docker}></img>
 						<img className="skill2" src={git}></img>
 					</div>
-					<h1 className="aboutheading">projects:</h1>
+					<h1 className="aboutheading">Projects</h1>
 					<div className="projectdiv">
 						<Projectpage></Projectpage>
 					</div>
 				</div>
 				<div className="Educontainer">
-					<h1 className="aboutheading">Education:</h1>
+					<h1 className="aboutheading">Education</h1>
 					<div className="poonjar">
 						<div className="Poonjarabout">
 							<h2 className="colname">College of Engineering,Poonjar</h2>
@@ -57,7 +57,7 @@ function About() {
 							</p>
 							<p>
 								Graduated from College of Engineering, Poonjar in the year 2020
-								with B.tech IN Computer Science and Engineering. Got introduced
+								with B.Tech in Computer Science and Engineering. Got introduced
 								the world of computers and gained knowledge in app development
 								and web development.
 							</p>
@@ -72,8 +72,8 @@ function About() {
 								<b>Batch:</b> 2022-2023
 							</p>
 							<p>
-								Graduated from University of Essex in the year 2023 with a
-								masters in data science. Gained valuable knowledge in Data
+								Graduated from the University of Essex in the year 2023 with a
+								masters in Data Science. Gained valuable knowledge in Data
 								Modelling, Data Visualisation, Machine Learning etc.
 							</p>
 						</div>
