@@ -1,13 +1,13 @@
 .herobackground {
 	display: flex;
-	width: 110vb;
-	padding-top: 220px;
-	padding-left: 100px;
-	justify-content: left;
+	width: auto;
+	height: 100vh;
+	justify-content: center;
 	flex-direction: column;
+	padding: 30px;
 }
 .typewriter {
-	text-align: left;
+	text-align: center;
 }
 .LinkHero {
 	color: black;
@@ -55,7 +55,8 @@
 }
 .corrector {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: row;
+	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.4);
 	height: 100vh;
 	width: auto;
@@ -70,12 +71,11 @@
 	font-size: 12px; /* Ensures the content is not revealed until the animation */ /* The typwriter cursor */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.15em; /* Adjust as needed */
-	width: 100%;
+	width: 500px;
 	text-align: justify;
 	height: 120px;
 	padding-bottom: 0%;
 	padding-top: 0%;
-	text-align: left;
 }
 .learn_btn {
 	height: 30px;
