@@ -86,16 +86,16 @@ body {
 }
 @font-face {
 	font-family: 'bruno';
-	src: local('bruno'),
+	src:
+		local('bruno'),
 		url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
 }
 .aboutheading {
-	font-size: 20px;
+	font-size: 10px;
 	font-family: 'bruno';
 	color: black;
-	background-color: white;
-	border-radius: 5px;
-	padding-left: 10px;
+	background-color: black;
+	border-radius: 50%;
 }
 .aboutsubheading {
 	font-size: 17px;
@@ -132,34 +132,236 @@ body {
 	display: flex;
 	flex-direction: row;
 }
+.centrified {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.Skills {
+	width: auto;
+	height: 350px;
+	width: 200px;
+	position: relative;
+	/* Essential for positioning child elements absolutely */
+}
 .Skillcontainer {
-	height: 70vh;
-	width: 100%;
-	background-color: transparent;
-	border-radius: 10px;
-
-	margin: 10px;
-	border-radius: 10px;
-}
-.Skillitem {
-	width: 100%;
-	height: auto;
-	margin-bottom: 10px;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-}
-
-.skill {
+	position: absolute;
 	width: 50px;
 	height: 50px;
-	margin-bottom: 15px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent; /* for visibility */
+	z-index: 10;
+	color: white;
+	display: flex;
+	justify-content: center; /* Centers horizontally */
+	align-items: center;
+	border: solid white;
+	font-family: bruno;
+	font-size: 12px;
+}
+.Skillitem {
+	position: absolute;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+	height: 60px;
+	top: 50%; /* Start at center */
+	left: 50%; /* Start at center */
+	transition-duration: 0.5s;
+
+	/* The Secret Sauce */
+	/* 1. Stay centered, 2. Orbit radius, 3. Rotate on own axis */
+	animation: orbit-and-spin 30s linear infinite;
+	background: conic-gradient(rgba(255, 255, 255, 0.3) var(--p), transparent 0);
+
+	/* 3. Transition the variable itself with a 1s delay */
+	transition: --p 0.1s ease-out 0.1s;
+}
+
+.Skillitem:hover {
+	border: solid white;
+	transition-duration: 0.5s;
+}
+.cnt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Skillitem:nth-child(2) {
+	transform: translate(-50%, -50%) rotate(0deg) translate(150px); /* Adjust 150px for desired radius */
+}
+
+.Skillitem:nth-child(3) {
+	transform: translate(-50%, -50%) rotate(24deg) translate(150px); /* Angle: 360deg / number of items (e.g., 5) */
+}
+
+.Skillitem:nth-child(4) {
+	transform: translate(-50%, -50%) rotate(48deg) translate(150px);
+}
+
+.Skillitem:nth-child(5) {
+	transform: translate(-50%, -50%) rotate(72deg) translate(150px);
+}
+
+.Skillitem:nth-child(6) {
+	transform: translate(-50%, -50%) rotate(96deg) translate(150px);
+}
+.Skillitem:nth-child(7) {
+	transform: translate(-50%, -50%) rotate(120deg) translate(150px);
+}
+.Skillitem:nth-child(8) {
+	transform: translate(-50%, -50%) rotate(144deg) translate(150px);
+}
+.Skillitem:nth-child(9) {
+	transform: translate(-50%, -50%) rotate(168deg) translate(150px);
+}
+.Skillitem:nth-child(10) {
+	transform: translate(-50%, -50%) rotate(192deg) translate(150px);
+}
+.Skillitem:nth-child(11) {
+	transform: translate(-50%, -50%) rotate(216deg) translate(150px);
+}
+.Skillitem:nth-child(12) {
+	transform: translate(-50%, -50%) rotate(240deg) translate(150px);
+}
+.Skillitem:nth-child(13) {
+	transform: translate(-50%, -50%) rotate(264deg) translate(150px);
+}
+.Skillitem:nth-child(14) {
+	transform: translate(-50%, -50%) rotate(288deg) translate(150px);
+}
+.Skillitem:nth-child(15) {
+	transform: translate(-50%, -50%) rotate(312deg) translate(150px);
+}
+.Skillitem:nth-child(16) {
+	transform: translate(-50%, -50%) rotate(336deg) translate(150px);
+}
+@keyframes orbit-and-spin {
+	from {
+		transform: translate(-50%, -50%) /* Keep anchored to center */ rotate(0deg)
+			/* Orbit position */ translateX(150px)
+			/* Orbit radius (distance from center) */ rotate(0deg); /* Spin on its own axis */
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg) /* One full orbit */
+			translateX(150px) rotate(-360deg); /* One full self-spin */
+	}
+}
+.Skillitem:nth-child(2) {
+	animation-delay: -2s;
+}
+.Skillitem:nth-child(3) {
+	animation-delay: -4s;
+}
+.Skillitem:nth-child(4) {
+	animation-delay: -6s;
+}
+.Skillitem:nth-child(5) {
+	animation-delay: -8s;
+}
+.Skillitem:nth-child(6) {
+	animation-delay: -10s;
+}
+.Skillitem:nth-child(7) {
+	animation-delay: -12s;
+}
+.Skillitem:nth-child(8) {
+	animation-delay: -14s;
+}
+.Skillitem:nth-child(9) {
+	animation-delay: -16s;
+}
+.Skillitem:nth-child(10) {
+	animation-delay: -18s;
+}
+.Skillitem:nth-child(11) {
+	animation-delay: -20s;
+}
+.Skillitem:nth-child(12) {
+	animation-delay: -22s;
+}
+.Skillitem:nth-child(13) {
+	animation-delay: -24s;
+}
+.Skillitem:nth-child(14) {
+	animation-delay: -26s;
+}
+.Skillitem:nth-child(15) {
+	animation-delay: -28s;
+}
+.Skillitem:nth-child(16) {
+	animation-delay: -30s;
+}
+@property --p {
+	syntax: '<percentage>';
+	inherits: false;
+	initial-value: 0%;
+}
+.Skillitem:nth-child(2):hover {
+	--p: 60%;
+}
+.Skillitem:nth-child(3):hover {
+	--p: 100%;
+}
+.Skillitem:nth-child(4):hover {
+	--p: 75%;
+}
+.Skillitem:nth-child(5):hover {
+	--p: 80%;
+}
+.Skillitem:nth-child(6):hover {
+	--p: 60%;
+}
+.Skillitem:nth-child(7):hover {
+	--p: 40%;
+}
+.Skillitem:nth-child(8):hover {
+	--p: 30%;
+}
+.Skillitem:nth-child(9):hover {
+	--p: 50%;
+}
+.Skillitem:nth-child(10):hover {
+	--p: 65%;
+}
+.Skillitem:nth-child(11):hover {
+	--p: 45%;
+}
+.Skillitem:nth-child(12):hover {
+	--p: 30%;
+}
+.Skillitem:nth-child(13):hover {
+	--p: 30%;
+}
+.Skillitem:nth-child(14):hover {
+	--p: 70%;
+}
+.Skillitem:nth-child(15):hover {
+	--p: 20%;
+}
+.Skillitem:nth-child(16):hover {
+	--p: 65%;
+}
+.Skills:hover .Skillitem {
+	animation-play-state: paused;
+}
+.skill {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
 	filter: invert(100%);
 	background-color: transparent;
 }
-.skill2 {
-	width: 50px;
-	height: 50px;
-	margin-bottom: 15px;
+.Skillitem:nth-child(16) .skill {
+	width: 30px;
+	height: 30px;
+	filter: invert(0%);
 	background-color: transparent;
 }
 
@@ -202,122 +404,96 @@ body {
 	width: 100%;
 	height: 40vh;
 }
-@media only screen and (max-width: 1000px) {
-	.Aboutmaincontainer {
-		height: 100vh;
-		background-color: black;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 0px;
-		margin: 0px;
-		padding-top: 60px;
-	}
-	.detail_container {
-		height: auto;
-		width: 100%;
-		background-color: transparent;
-		border-radius: 25px;
-		display: flex;
-		flex-direction: row;
-		font-size: 9px;
-	}
-	.photo {
-		height: auto;
-		width: auto;
-		background-color: transparent;
-		border-radius: 25px;
-		margin-top: 20px;
-		padding: 0px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding-bottom: 0px;
-		border-style: none;
-	}
-	.photocontainer {
-		width: 80px;
-		height: 80px;
-		background-image: url('../images/profile.jpg');
-		border-radius: 15px;
-		background-position-x: 70%;
-		background-position-y: 10%;
-		background-size: 350px 350px;
-		display: none;
-	}
-	.aboutcontainer {
-		height: 120px;
-		width: auto;
-		background-color: transparent;
-		color: white;
-		font-size: 9px;
-	}
-	.maininfo {
-		height: 400px;
-		width: auto;
-		background-color: transparent;
-		margin-bottom: 20px;
-		margin-left: 0px;
-		margin-right: 0px;
-		border-radius: 20px;
-		padding: 15px;
-		color: white;
-		overflow: scroll;
-	}
-	.aboutheading {
-		font-size: 12px;
-		font-family: 'bruno';
-		color: black;
-		background-color: white;
-		border-radius: 5px;
-		padding-left: 0px;
-		text-align: center;
-	}
-	.aboutsubheading {
-		font-size: 12px;
-		color: white;
-	}
-	.Educontainer {
-		height: 60vh;
-		width: 100%;
-		display: flex;
-		font-family: monospace;
-		font-size: 9px;
-		flex-direction: column;
-		justify-content: start;
-		background-color: black;
-		margin: 5px;
-	}
-	.poonjar {
-		height: 20vh;
-		padding: 10px;
-		width: 100%;
-		border-radius: 20px;
-		display: flex;
-		flex-direction: row;
-	}
-	.essex {
-		height: 20vh;
-		padding: 10px;
-		width: 100%;
-		border-radius: 20px;
-		display: flex;
-		flex-direction: row;
-	}
-	.Skillcontainer {
-		height: 70vh;
-		width: 100%;
-		background-color: transparent;
-		margin: 5px;
-		padding-bottom: 20px;
-	}
+@media only screen and (max-width: 700px) {
 	.Skillitem {
+		height: 30px;
+		width: 30px;
+	}
+	@keyframes orbit-and-spin {
+		from {
+			transform: translate(-50%, -50%) /* Keep anchored to center */
+				rotate(0deg) /* Orbit position */ translateX(80px)
+				/* Orbit radius (distance from center) */ rotate(0deg); /* Spin on its own axis */
+		}
+		to {
+			transform: translate(-50%, -50%) rotate(360deg) /* One full orbit */
+				translateX(80px) rotate(-360deg); /* One full self-spin */
+		}
+	}
+	.Skillitem:nth-child(2) {
+		transform: translate(-50%, -50%) rotate(0deg) translate(80px); /* Adjust 150px for desired radius */
+	}
+
+	.Skillitem:nth-child(3) {
+		transform: translate(-50%, -50%) rotate(24deg) translate(80px); /* Angle: 360deg / number of items (e.g., 5) */
+	}
+
+	.Skillitem:nth-child(4) {
+		transform: translate(-50%, -50%) rotate(48deg) translate(80px);
+	}
+
+	.Skillitem:nth-child(5) {
+		transform: translate(-50%, -50%) rotate(72deg) translate(80px);
+	}
+
+	.Skillitem:nth-child(6) {
+		transform: translate(-50%, -50%) rotate(96deg) translate(80px);
+	}
+	.Skillitem:nth-child(7) {
+		transform: translate(-50%, -50%) rotate(120deg) translate(80px);
+	}
+	.Skillitem:nth-child(8) {
+		transform: translate(-50%, -50%) rotate(144deg) translate(80px);
+	}
+	.Skillitem:nth-child(9) {
+		transform: translate(-50%, -50%) rotate(168deg) translate(80px);
+	}
+	.Skillitem:nth-child(10) {
+		transform: translate(-50%, -50%) rotate(192deg) translate(80px);
+	}
+	.Skillitem:nth-child(11) {
+		transform: translate(-50%, -50%) rotate(216deg) translate(80px);
+	}
+	.Skillitem:nth-child(12) {
+		transform: translate(-50%, -50%) rotate(240deg) translate(80px);
+	}
+	.Skillitem:nth-child(13) {
+		transform: translate(-50%, -50%) rotate(264deg) translate(80px);
+	}
+	.Skillitem:nth-child(14) {
+		transform: translate(-50%, -50%) rotate(288deg) translate(80px);
+	}
+	.Skillitem:nth-child(15) {
+		transform: translate(-50%, -50%) rotate(312deg) translate(80px);
+	}
+	.Skillitem:nth-child(16) {
+		transform: translate(-50%, -50%) rotate(336deg) translate(80px);
+	}
+	.Skills {
+		width: auto;
+		height: 30px;
 		width: 100%;
-		height: auto;
-		padding-left: 15px;
-		display: grid;
-		grid-template-columns: auto auto auto auto auto;
+		position: relative;
+		/* Essential for positioning child elements absolutely */
+	}
+
+	.Skillcontainer {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: transparent; /* for visibility */
+		z-index: 10;
+		color: white;
+		display: flex;
+		justify-content: center; /* Centers horizontally */
+		align-items: center;
+		border: solid white;
+		font-family: bruno;
+		font-size: 8px;
 	}
 
 	.skill {
@@ -330,40 +506,5 @@ body {
 		width: 20px;
 		height: 20px;
 		background-color: transparent;
-	}
-	.Poonjarabout {
-		width: 100%;
-		height: 15vh;
-		font-size: 9px;
-		color: white;
-		padding-right: 20px;
-		border-radius: 15px 0px 0px 15px;
-	}
-	.Poonjarpic {
-		height: 15vh;
-		width: 20vb;
-		background-image: url('../images/IHRD_Logo.jpg');
-		background-size: cover;
-		border-radius: 0px 15px 15px 0px;
-	}
-	.colname {
-		font-family: monospace;
-		font-size: 12px;
-		font-weight: 700;
-	}
-	.Essexabout {
-		width: 100%;
-		height: 15vh;
-		font-size: 9px;
-		color: white;
-		padding-left: 20px;
-		border-radius: 0px 15px 15px 0px;
-	}
-	.Essexpic {
-		height: 15vh;
-		width: 20vb;
-		background-image: url('../images/essex.jpeg');
-		background-size: cover;
-		border-radius: 15px 0px 0px 15px;
 	}
 }

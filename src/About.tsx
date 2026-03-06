@@ -21,66 +21,87 @@ import Projectpage from './Projectpage';
 
 function About() {
 	return (
-		<>
-			<div className="Aboutmaincontainer">
-				<div className="Skillcontainer">
-					<h1 className="aboutheading">Skills</h1>
-					<div className="Skillitem">
+		<div className="centrified">
+			<div className="Skills">
+				<div className="Skillcontainer">Skills</div>
+
+				<div className="Skillitem">
+					<div className="cnt">
 						<img className="skill" src={JS}></img>
-						<img className="skill" src={HTML}></img>
-						<img className="skill" src={CSS}></img>
-						<img className="skill" src={python}></img>
-						<img className="skill" src={pandas}></img>
-						<img className="skill" src={numpy}></img>
-						<img className="skill" src={r}></img>
-						<img className="skill" src={n}></img>
-						<img className="skill" src={sql}></img>
-						<img className="skill" src={bi}></img>
-						<img className="skill" src={tensorflow}></img>
-						<img className="skill" src={pytorch}></img>
-						<img className="skill" src={vscode}></img>
-						<img className="skill" src={docker}></img>
-						<img className="skill2" src={git}></img>
-					</div>
-					<h1 className="aboutheading">Projects</h1>
-					<div className="projectdiv">
-						<Projectpage></Projectpage>
 					</div>
 				</div>
-				<div className="Educontainer">
-					<h1 className="aboutheading">Education</h1>
-					<div className="poonjar">
-						<div className="Poonjarabout">
-							<h2 className="colname">College of Engineering,Poonjar</h2>
-							<p>
-								<b>Batch:</b> 2016-2020
-							</p>
-							<p>
-								Graduated from College of Engineering, Poonjar in the year 2020
-								with B.Tech in Computer Science and Engineering. Got introduced
-								the world of computers and gained knowledge in app development
-								and web development.
-							</p>
-						</div>
-						<div className="Poonjarpic"></div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={HTML}></img>
 					</div>
-					<div className="essex">
-						<div className="Essexpic"></div>
-						<div className="Essexabout">
-							<h2 className="colname">University of Essex</h2>
-							<p>
-								<b>Batch:</b> 2022-2023
-							</p>
-							<p>
-								Graduated from the University of Essex in the year 2023 with a
-								masters in Data Science. Gained valuable knowledge in Data
-								Modelling, Data Visualisation, Machine Learning etc.
-							</p>
-						</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={CSS}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={python}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={pandas}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={numpy}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={r}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={n}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={sql}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={bi}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={tensorflow}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={pytorch}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={vscode}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={docker}></img>
+					</div>
+				</div>
+				<div className="Skillitem">
+					<div className="cnt">
+						<img className="skill" src={git}></img>
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
