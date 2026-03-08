@@ -20,5 +20,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 			<Footer />
 			<About />
 		</BrowserRouter>
-	</React.StrictMode>
+	</React.StrictMode>,
 );

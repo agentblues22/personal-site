@@ -31,7 +31,7 @@ function Footer() {
 						<img className="socialimage" src={instagram}></img>
 					</div>
 				</a>
-				<a href="tel:+447867087296">
+				<a href="tel:+919946208885">
 					<div>
 						<img className="socialimage" src={phone}></img>
 					</div>

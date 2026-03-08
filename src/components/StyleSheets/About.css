@@ -135,10 +135,9 @@ body {
 .centrified {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 .Skills {
-	width: auto;
 	height: 350px;
 	width: 200px;
 	position: relative;
@@ -404,6 +403,11 @@ body {
 	width: 100%;
 	height: 40vh;
 }
+.project {
+	width: 450px;
+	height: 400px;
+	overflow: scroll;
+}
 @media only screen and (max-width: 700px) {
 	.Skillitem {
 		height: 30px;
@@ -412,12 +416,12 @@ body {
 	@keyframes orbit-and-spin {
 		from {
 			transform: translate(-50%, -50%) /* Keep anchored to center */
-				rotate(0deg) /* Orbit position */ translateX(80px)
+				rotate(0deg) /* Orbit position */ translateX(90px)
 				/* Orbit radius (distance from center) */ rotate(0deg); /* Spin on its own axis */
 		}
 		to {
 			transform: translate(-50%, -50%) rotate(360deg) /* One full orbit */
-				translateX(80px) rotate(-360deg); /* One full self-spin */
+				translateX(90px) rotate(-360deg); /* One full self-spin */
 		}
 	}
 	.Skillitem:nth-child(2) {
@@ -473,14 +477,22 @@ body {
 		width: auto;
 		height: 30px;
 		width: 100%;
+		padding-top: 0;
+		margin-top: 0;
+		margin-bottom: 100px;
 		position: relative;
 		/* Essential for positioning child elements absolutely */
+	}
+	.centrified {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
 	.Skillcontainer {
 		position: absolute;
-		width: 30px;
-		height: 30px;
+		width: 80px;
+		height: 80px;
 		border-radius: 50%;
 		top: 50%;
 		left: 50%;

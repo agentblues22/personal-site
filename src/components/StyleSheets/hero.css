@@ -17,7 +17,8 @@
 }
 @font-face {
 	font-family: 'bruno';
-	src: local('bruno'),
+	src:
+		local('bruno'),
 		url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
 }
 .typewriter h1 {
@@ -30,7 +31,9 @@
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.05em; /* Adjust as needed */
-	animation: typing 3.5s steps(20, end), blink-caret 0.5s step-end infinite;
+	animation:
+		typing 3.5s steps(20, end),
+		blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
@@ -114,7 +117,7 @@
 }
 @media only screen and (max-width: 1000px) {
 	.herobackground {
-		height: 100vh;
+		height: 70vh;
 		width: auto;
 		display: flex;
 		justify-content: flex-end;
@@ -137,7 +140,9 @@
 		white-space: nowrap; /* Keeps the content on a single line */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: 0.15em; /* Adjust as needed */
-		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+		animation:
+			typing 3.5s steps(30, end),
+			blink-caret 0.5s step-end infinite;
 	}
 
 	/* The typing effect */
@@ -171,6 +176,7 @@
 	.body_content {
 		text-align: center;
 		color: #fff;
+		text-align: justify;
 		font-family: monospace;
 		font-size: 8px; /* Ensures the content is not revealed until the animation */ /* The typwriter cursor */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */

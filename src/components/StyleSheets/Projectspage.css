@@ -1,19 +1,20 @@
 .projectpage {
 	height: auto;
-	width: auto;
+	width: 400px;
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
 	padding-top: 0px;
 }
 @font-face {
 	font-family: 'bruno';
-	src: local('bruno'),
+	src:
+		local('bruno'),
 		url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
 }
 .projectpagecontainer {
-	height: 30vh;
+	height: 35vh;
 	width: auto;
 	background-color: rgba(0, 0, 0, 0.2);
 
@@ -21,7 +22,6 @@
 	flex-direction: row;
 	justify-content: center;
 	margin-left: 10px;
-	margin-right: 10px;
 	border-radius: 0px;
 }
 .projectpictureframe {
@@ -29,21 +29,18 @@
 	height: 100px;
 	width: 120px;
 	background-color: white;
-
-	animation-name: example;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	border-radius: 15%;
+	border-radius: 5%;
 }
 
 .project_body_writeup {
 	align-self: center;
 	display: flex;
+	text-align: justify;
 	flex-direction: column;
 	margin-left: 10px;
 }
 .project_body_text {
-	width: 250px;
+	width: auto;
 	height: auto;
 	font-size: 8px;
 	color: white;
@@ -59,27 +56,29 @@
 	width: 60px;
 	text-align: center;
 	font-family: monospace;
-	color: black;
+	color: white;
 	font-size: 8px;
 	align-content: center;
-	background-color: white;
+	background-color: transparent;
 	align-self: center;
-	border-radius: 10px;
+	border-radius: 5%;
+	border: solid white;
 	transition-duration: 0.2s;
 	margin-bottom: 15px;
 	text-decoration: none;
+	transition-duration: 0.5s;
 }
 a {
 	text-decoration: none;
 }
 .learn_btnp:hover {
 	height: 15px;
-	width: 100px;
-	color: white;
+	width: 60px;
+	color: black;
 	align-content: center;
-	background-color: transparent;
+	background-color: white;
 	align-self: center;
-	border-radius: 10px;
+	border-radius: 5%;
 }
 .projectsback {
 	background-color: black;
@@ -87,12 +86,13 @@ a {
 	background-size: cover;
 }
 .project_heading {
-	background-color: white;
-	color: black;
+	background-color: transparent;
+	color: white;
 	width: 100%;
 	font-size: 10px;
 	font-family: 'bruno';
-	border-radius: 5px;
+	border-radius: 5%;
+	border: solid white;
 	padding-left: 2px;
 }
 .Skillset {
@@ -105,21 +105,22 @@ a {
 @media only screen and (max-width: 800px) {
 	.projectpage {
 		height: auto;
-		width: auto;
+		width: 400px;
 		background-color: rgba(0, 0, 0, 0.7);
 		display: flex;
 		flex-direction: column;
-		justify-content: start;
-		padding: 0px;
-		margin: 0px;
+		justify-content: space-between;
+		padding-top: 0px;
+		justify-self: center;
 	}
 	@font-face {
 		font-family: 'bruno';
-		src: local('bruno'),
+		src:
+			local('bruno'),
 			url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
 	}
 	.projectpagecontainer {
-		height: auto;
+		height: 20vh;
 		width: auto;
 		background-color: rgba(0, 0, 0, 0.2);
 
@@ -127,25 +128,25 @@ a {
 		flex-direction: row;
 		justify-content: center;
 		margin-left: 10px;
-		margin-right: 10px;
 		border-radius: 0px;
-		margin-bottom: 0px;
 	}
 	.projectpictureframe {
 		align-self: center;
-		height: 80px;
-		width: 100px;
-		border-radius: 15%;
+		height: 100px;
+		width: 120px;
+		background-color: white;
+		border-radius: 5%;
 	}
 
 	.project_body_writeup {
 		align-self: center;
 		display: flex;
+		text-align: justify;
 		flex-direction: column;
 		margin-left: 10px;
 	}
 	.project_body_text {
-		width: 175px;
+		width: auto;
 		height: auto;
 		font-size: 8px;
 		color: white;
@@ -161,27 +162,29 @@ a {
 		width: 60px;
 		text-align: center;
 		font-family: monospace;
-		color: black;
+		color: white;
 		font-size: 8px;
 		align-content: center;
-		background-color: white;
+		background-color: transparent;
 		align-self: center;
-		border-radius: 10px;
+		border-radius: 5%;
+		border: solid white;
 		transition-duration: 0.2s;
 		margin-bottom: 15px;
 		text-decoration: none;
+		transition-duration: 0.5s;
 	}
 	a {
 		text-decoration: none;
 	}
 	.learn_btnp:hover {
 		height: 15px;
-		width: 50px;
-		color: white;
+		width: 60px;
+		color: black;
 		align-content: center;
-		background-color: transparent;
+		background-color: white;
 		align-self: center;
-		border-radius: 10px;
+		border-radius: 5%;
 	}
 	.projectsback {
 		background-color: black;
@@ -189,19 +192,20 @@ a {
 		background-size: cover;
 	}
 	.project_heading {
-		background-color: white;
-		color: black;
+		background-color: transparent;
+		color: white;
 		width: 100%;
 		font-size: 10px;
 		font-family: 'bruno';
-		border-radius: 5px;
+		border-radius: 5%;
+		border: solid white;
 		padding-left: 2px;
 	}
 	.Skillset {
 		color: white;
 
 		font-family: monospace;
-		font-size: 10px;
+		font-size: 12px;
 		margin-bottom: 3px;
 	}
 }

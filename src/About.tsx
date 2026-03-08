@@ -101,6 +101,9 @@ function About() {
 					</div>
 				</div>
 			</div>
+			<div className="project">
+				<Projectpage />
+			</div>
 		</div>
 	);
 }
