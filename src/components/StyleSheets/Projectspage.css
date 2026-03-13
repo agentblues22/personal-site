@@ -105,12 +105,11 @@ a {
 @media only screen and (max-width: 800px) {
 	.projectpage {
 		height: auto;
-		width: 400px;
+		width: 300px;
 		background-color: rgba(0, 0, 0, 0.7);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding-top: 0px;
 		justify-self: center;
 	}
 	@font-face {
@@ -127,13 +126,13 @@ a {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-left: 10px;
+		margin: 5px;
 		border-radius: 0px;
 	}
 	.projectpictureframe {
 		align-self: center;
-		height: 100px;
-		width: 120px;
+		height: 60px;
+		width: 80px;
 		background-color: white;
 		border-radius: 5%;
 	}
@@ -148,7 +147,7 @@ a {
 	.project_body_text {
 		width: auto;
 		height: auto;
-		font-size: 8px;
+		font-size: 6px;
 		color: white;
 		font-family: monospace;
 	}
@@ -194,7 +193,7 @@ a {
 	.project_heading {
 		background-color: transparent;
 		color: white;
-		width: 100%;
+		width: auto;
 		font-size: 10px;
 		font-family: 'bruno';
 		border-radius: 5%;
@@ -205,7 +204,7 @@ a {
 		color: white;
 
 		font-family: monospace;
-		font-size: 12px;
+		font-size: 6px;
 		margin-bottom: 3px;
 	}
 }

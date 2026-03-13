@@ -519,4 +519,9 @@ body {
 		height: 20px;
 		background-color: transparent;
 	}
+	.project {
+		width: auto;
+		height: 400px;
+		overflow: scroll;
+	}
 }
