@@ -22,6 +22,7 @@ import Projectpage from './Projectpage';
 function About() {
 	return (
 		<div className="centrified">
+			<div className="mobiskills">Skills</div>
 			<div className="Skills">
 				<div className="Skillcontainer">Skills</div>
 

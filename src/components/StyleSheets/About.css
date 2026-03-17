@@ -408,6 +408,9 @@ body {
 	height: 400px;
 	overflow: scroll;
 }
+.mobiskills {
+	display: none;
+}
 @media only screen and (max-width: 700px) {
 	.Skillitem {
 		position: unset;
@@ -510,17 +513,25 @@ body {
 	.Skills {
 		width: 350px;
 		height: 30px;
-		width: 100%;
+		justify-self: center;
 		padding-top: 0;
 		margin-top: 0;
 		margin: 20px;
 		margin-bottom: 180px;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 17px;
-
+		gap: 12px;
+		justify-content: center;
 		position: unset;
 		/* Essential for positioning child elements absolutely */
+	}
+	.mobiskills {
+		display: flex;
+		justify-content: center;
+		justify-self: center;
+		font-family: bruno;
+		font-size: 8px;
+		color: white;
 	}
 	.centrified {
 		display: flex;
@@ -539,8 +550,9 @@ body {
 		background: transparent; /* for visibility */
 		z-index: 10;
 		color: white;
-		display: flex;
+		display: none;
 		flex: 0 0 100%;
+		justify-self: center;
 		justify-content: center; /* Centers horizontally */
 		align-items: center;
 		border: none;
