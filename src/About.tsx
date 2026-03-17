@@ -102,6 +102,7 @@ function About() {
 					</div>
 				</div>
 			</div>
+			<div className="mobiproj">Projects</div>
 			<div className="project">
 				<Projectpage />
 			</div>

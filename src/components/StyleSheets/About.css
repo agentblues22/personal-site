@@ -411,6 +411,9 @@ body {
 .mobiskills {
 	display: none;
 }
+.mobiproj {
+	display: none;
+}
 @media only screen and (max-width: 700px) {
 	.Skillitem {
 		position: unset;
@@ -532,6 +535,15 @@ body {
 		font-family: bruno;
 		font-size: 8px;
 		color: white;
+	}
+	.mobiproj {
+		display: flex;
+		justify-content: center;
+		justify-self: center;
+		font-family: bruno;
+		font-size: 8px;
+		color: white;
+		margin-bottom: 10px;
 	}
 	.centrified {
 		display: flex;
